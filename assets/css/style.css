@@ -61,7 +61,7 @@ body{
 
 a,a:hover,a:active,a:focus {
 
-	display:inline-block;
+	
 	text-decoration:none;
 	font-size:13px;
 	padding:0;
@@ -172,7 +172,7 @@ html,body{
     transition: all 0.5s linear;
 }
 .sticky-wrapper.is-sticky .main-menu .nav a:before{
-    bottom: 17.6px;
+   /* bottom: 17.6px;*/
 }/*.sticky-wrapper */
 
 /*.logo*/
@@ -186,7 +186,11 @@ html,body{
     padding: 10px 0 0 0;
 }
 .logo a span{
-    color: #00d8ff;
+    /*color: #54BEBB;*/
+    color: #54BEBB;
+    background-color: white;
+    padding: 0px 5px;
+    
     text-transform: capitalize;
 }
 
@@ -200,7 +204,7 @@ html,body{
 }
 .main-menu .nav li {
     position:relative;
-    padding: 16px 12px 0px;
+    padding: 16px 12px 10px;
     -webkit-transition:all 0.2s linear;
     -moz-transition:all 0.2s linear;
     -ms-transition:all 0.2s linear;
@@ -208,7 +212,7 @@ html,body{
     transition: all 0.2s linear;
 }
 .main-menu .nav li a{
-    padding: 11px 0 29px;
+    padding: 11px 0 10px;
     color: #fff;
     font-size: 16px;
     text-transform: capitalize;
@@ -222,7 +226,7 @@ html,body{
 .main-menu  .nav  li.active a,
 .main-menu  .nav  li a:hover,
 .main-menu .nav  li a:focus{
-    color: #00d8ff;
+    color: #54BEBB;
     background-color:transparent;
 }
 .main-menu .nav a:before{
@@ -242,7 +246,7 @@ html,body{
 }
 .main-menu .nav li.active  a:before,
 .main-menu .nav a:hover:before{
-    background: #00d8ff;
+    background: #54BEBB;
     width: 100%;
 }
 
@@ -256,7 +260,7 @@ html,body{
     float:left;
 }
 .main-menu .navbar-toggle {
-    color: #00d8ff;
+    color: #54BEBB;
 }
 .main-menu .navbar-default .navbar-toggle:focus, 
 .main-menu .navbar-default .navbar-toggle:hover {
@@ -270,8 +274,8 @@ html,body{
 
 /*book-btn*/
 .book-btn {
-	background: #00d8ff;
-    border: 1px solid #00d8ff;
+	background: #54BEBB;
+    border: 1px solid #54BEBB;
     width: 120px;
     height: 40px;
     white-space: nowrap;
@@ -345,8 +349,8 @@ html,body{
 	display: flex;
     justify-content: center;
     align-items: center;
-    background: #00d8ff;
-    border: 1px solid #00d8ff;
+    background: #54BEBB;
+    border: 1px solid #54BEBB;
     width: 200px;
     height: 60px;
     white-space: nowrap;
@@ -389,13 +393,14 @@ html,body{
     box-shadow: 0 10px 20px rgba(0,0,0,.1);
 }
 .desc-tabs .nav-tabs {
-    display: inline-block;
-    border-right: 1px solid #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .desc-tabs .nav-tabs>li.active>a{
 	color: #fff;
-    background: #00d8ff;
+    background: #54BEBB;
     cursor: default;
     font-size: 20px;
     font-weight: 500;
@@ -407,14 +412,16 @@ html,body{
 	-o-transition:.5s;
     transition: .5s;
 }
+
 .desc-tabs .nav-tabs>li.active>a:focus, 
 .desc-tabs .nav-tabs>li.active>a:hover {
     color: #565a5c;
     text-decoration: none;
 }
+
 .desc-tabs .nav-tabs>li>a{
 	color: #fff;
-    background: #00d8ff;
+    background: #54BEBB;
     cursor: default;
     font-size: 20px;
     font-weight: 500;
@@ -427,7 +434,10 @@ html,body{
 	-ms-transition:.5s; 
 	-o-transition:.5s;
     transition: .5s;
+    border-radius: 45px;
+    margin-top: 2px;
 }
+
 .single-travel-boxes .nav>li>a:focus, 
 .single-travel-boxes .nav>li>a:hover {
 	color: #565a5c;
@@ -565,7 +575,7 @@ html,body{
 }
 
 .single-trip-circle input[type="radio"]:checked + label span.round-boarder1{
-     background-color:#00d8ff;
+     background-color:#54BEBB;
 }
 
 .single-trip-circle input[type="radio"] + label span.round-boarder1,
@@ -636,6 +646,21 @@ html,body{
 .parcours-container img {
    width: 50%;
 }
+.logo-title-container {
+    display: inline-block;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.navrow {
+    display: flex;
+    align-items: center;
+}
+
 @media screen and (max-width: 950px){
     .parcours-container {
         flex-direction: column;
@@ -666,8 +691,8 @@ html,body{
 	border-radius: 5px;
 }
 .price_filter .ui-slider-handle.ui-state-default.ui-corner-all {
-    background: #00d8ff none repeat scroll 0 0;
-    border: 0px solid #00d8ff;
+    background: #54BEBB none repeat scroll 0 0;
+    border: 0px solid #54BEBB;
     border-radius:50%;
     height: 12px;
     width: 12px;
@@ -675,7 +700,7 @@ html,body{
     cursor: pointer;
     z-index: 1;
 }
-.price_filter .ui-slider-range {background: #00d8ff none repeat scroll 0 0;}
+.price_filter .ui-slider-range {background: #54BEBB none repeat scroll 0 0;}
 .price_slider_amount > input[type="text"] {
     font-weight: 500;
     font-size: 14px;
@@ -1072,7 +1097,7 @@ html,body{
     background: #aaa; 
 }
 .testemonial .owl-theme .owl-dots .owl-dot.active span{
-    background: #00d8ff;
+    background: #54BEBB;
 }/*owl-carousel*/
 
 /*home1-testm-txt*/
@@ -1089,7 +1114,7 @@ html,body{
 }
 .home1-testm-txt h3 a{
     display: block;
-    color: #00d8ff;
+    color: #54BEBB;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
@@ -1408,7 +1433,7 @@ html,body{
 
 /*appsLand-btn*/
 .appsLand-btn {
-    background: #00d8ff;
+    background: #54BEBB;
     display: inline-block;
     padding: 17px 54px;
     text-decoration: none;
@@ -1437,7 +1462,7 @@ html,body{
 }
 .appsLand-btn:hover {
     box-shadow: 0 3px 25px rgba(2, 3, 3, 0.25);
-    background: #00d8ff;
+    background: #54BEBB;
 }
 
 .appsLand-btn.appsLand-btn-larg {
@@ -1487,7 +1512,7 @@ html,body{
     padding: 10px 0 0 0;
 }
 .footer-logo a>span {
-    color: #00d8ff;
+    color: #54BEBB;
     text-transform: capitalize;
 } 
 .footer-logo p{
@@ -1518,7 +1543,7 @@ html,body{
     -ms-transition:scaleX(1.2);
     -o-transition:scaleX(1.2);
     transform:scaleX(1.2);
-    color: #00d8ff;
+    color: #54BEBB;
 }/*single-footer-txt*/
 
 .footer-copyright hr{
@@ -1579,7 +1604,7 @@ html,body{
     margin-top:28px;
 }
 .foot-icons p a,.foot-icons p a:hover,.foot-icons p a:focus{
-    color:#00d8ff;
+    color:#54BEBB;
     font-size:16px;
     margin-top:28px;
 }/*foot-icons*/
@@ -1601,8 +1626,8 @@ html,body{
     cursor: pointer;
     z-index:15;
     color: #fff;
-    background:#00d8ff;
-	border:1px solid #00d8ff;
+    background:#54BEBB;
+	border:1px solid #54BEBB;
 	border-radius:5px;
 	-webkit-transition: .5s; 
 	-moz-transition:.5s; 
